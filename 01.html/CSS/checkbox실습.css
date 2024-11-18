@@ -1,0 +1,15 @@
+input.biggerCheckbox {
+    border-width: 3px;
+    outline-style: 3px;
+    width: 30px;
+    height: 30px;
+}
+input.circleCheckbox {
+    width: 50px;
+    height: 50px;
+}
+input.roundedgeCheckbox {
+    border-radius: 2%;
+    width: 80px;
+    height: 80px;
+}

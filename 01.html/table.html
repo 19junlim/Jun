@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table tag</title>
+</head>
+<body>
+    <h1>This is about table tag</h1>
+
+    <table border="1" width="150" height="150" bgcolor="pink">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <!-- cellspacing: border 사이의 간격
+    cellpadding: cell(td)요소의 내부 간격 -->
+
+    <table border="1">
+        <caption>메뉴판</caption>
+        <tr>
+            <th>매뉴</th>
+            <th>가격</th>
+            <th>비고</th>
+        </tr>
+        <tr>
+            <td>국물떡볶이</td>
+            <td>5000</td>
+            <td>2인 이상 주문 가능</td>
+        </tr>
+        <tr>
+            <td>참치김밥</td>
+            <td>4000</td>
+            <td>x</td>
+        </tr>
+    </table>
+
+
+    <table border="1" cellpadding="15" cellspacing="5" align="center">
+        <caption>
+          메뉴판
+        </caption>
+        <tr>
+          <!-- th 태그 : 테이블의 제목 칸을 의미 (bold 체) -->
+          <th>메뉴</th>
+          <th>가격</th>
+          <th>비고</th>
+        </tr>
+        <tr>
+          <td>국물떡볶이</td>
+          <td>5000</td>
+          <td>2인 이상 주문 가능</td>
+        </tr>
+        <tr>
+          <td>참치김밥</td>
+          <td>4000</td>
+          <td>x</td>
+        </tr>
+      </table>
+  
+      <table border="1" cellspacing="0">
+        <caption>
+          New 메뉴판
+        </caption>
+        <tr>
+          <!-- th 태그 : 테이블의 제목 칸을 의미 (bold 체) -->
+          <th>메뉴</th>
+          <th>가격</th>
+          <th>비고</th>
+        </tr>
+        <tr>
+          <td>국물떡볶이</td>
+          <td>5000</td>
+          <td>2인 이상 주문 가능</td>
+        </tr>
+        <tr>
+          <td>참치김밥</td>
+          <!-- rowspan: 해당 칸이 점유하는 행의 수 지정 => 2개의 row를 합치겠다. -->
+          <td rowspan="2">4000</td>
+          <td>x</td>
+        </tr>
+        <tr>
+          <td>치즈김밥</td>
+          <!-- <td>4000</td> -->
+          <td>치즈 추가 500원</td>
+        </tr>
+        <tr>
+          <!-- colspan: 해당 칸이 점유하는 열의 수 지정 => 3개의 column를 합치겠다. -->
+          <td colspan="3">순대 (품절)</td>
+        </tr>
+      </table>
+
+
+
+</body>
+</html>
