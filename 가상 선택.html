@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            a:hover{
+                color:red
+            }
+            #btn:active{
+                color:blue
+            }
+            #txt:focus{
+                background-color:red;
+                color:aquamarine
+            }
+            .fruits span:first-child{
+                color:red
+            }
+            .fruits h3:last-child{
+                color:purple
+            }
+
+            .fruits #apple{
+                color:blue
+            }
+            .fruits :nth-child(3){
+                color:orange
+            }
+            .fruits *:not(span){
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://naver.com">Naver</a>
+
+        <input id="btn" type="button" value="push">
+
+      <input id="txt" type="text" placeholder="please enter">   <!-- value라고 치고 그곳에 뭐라고 쓸건지 치기 -->
+        
+    
+
+
+        <div class="fruits">
+            <span>딸기</span>
+            <br>
+            <span>수박</span>
+            <div>오렌지</div>
+            <p>망고</p>
+            <h3>사과</h3>
+            <p id="apple">사과사과</p>
+        </div>
+
+    </body>
+</html>
