@@ -1,0 +1,35 @@
+/* 웹 폰트
+    구글 웹, 눈누 웹 대중적
+    모든 브라우져에서 보는 폰트를 통일
+    폰트를 다운하는것이아닌 link태그에 걸려있는 주소로 사용한다
+    보통 기본 폰트는 body,*, CSS 파일에 적용 */
+
+
+/* 눈누 폰트 적용 */
+@font-face {
+    font-family: 'Danjo-bold-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-face
+    CSS에서 웹폰트를 정의하기 위해 만든 규칙
+    이를 통해 사용자 정의 폰트를 추가하고
+    사용자 기기에 폰트가 설치되어있지 않아도 사용할수있도록 폰트를 사져올수있음 */
+
+
+
+
+* {
+    /* 구글 폰트 적용 방법 */
+    font-family: "Russo One", sans-serif;
+    /* 이 글꼴이 없다면 sans-serif로 대체를 하는것 */
+    font-weight: 400;
+  }
+
+*{
+    font-family: 'Danjo-bold-Regular' ;
+    text-decoration:overline;
+}
+  

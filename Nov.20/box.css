@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    gap: 20px;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    border-color: red;
+    border-style: solid;
+    border-width: 10px;
+    background-color: aqua;
+    padding: 20px;
+}
+
+.box.container{
+    box-sizing: content-box;
+}
+
+.box.border{
+    box-sizing: border-box;
+}
+
+/* content-box
+    have to calculate all the sizes and easy to cause errors */
+
+/* border-box
+    don't need to calculate sizes and possible to design eaqualy */

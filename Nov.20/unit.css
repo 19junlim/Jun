@@ -1,0 +1,86 @@
+html {
+    font-size: 20px;
+}
+/* giving 20px font size to all html */
+
+.box {
+    margin-bottom: 100px;
+}
+/* all box named gets this order (even if it's like {box px}) still understands as box */
+
+.px{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+}
+
+.pct-parent{
+    width: 300px;
+    height: 300px;
+    background-color: plum;
+}
+
+.pct-child{
+    width: 60%;
+    height: 60%;
+    background-color: palegreen;
+}
+
+/* html code order : pct-child is inside the pct-parent so when 
+I give % size to the child it automatically applies to the parents size
+it means child's size is going to be 60% of the parent's size (300px) */
+
+.em {
+    font-size: 2em;
+}
+
+.case1 {
+    font-size: 20px;
+}
+
+.case2 {
+    font-size: 10px;
+}
+
+.em-3 {
+    font-size: 3em;
+}
+
+/* em size is depends on the parents font size. case1 is 20px and gave 3em 
+which is 20*3=60 so it is 60px */
+
+/* 10px and gave 3em so formula is going to be 10*3=30 which makes bottom one as 
+30px */
+
+.rem {
+    font-size: 2rem;
+}
+
+/* only works to the root setting doesn's get involved by parent's setting */
+
+:root {
+    --color-success: blue;
+    --color-error: red;
+    --color-white: white;
+    --size: 8px;
+}
+
+/* --color-success: it's just giving a name */
+
+.btn {
+    color: var(--color-white);
+    padding: var(--size);
+
+}
+
+/* when using made by myself name have to use "var()"
+or
+it won't work */
+
+.btn.success {
+    background-color: var(--color-success);
+}
+
+.btn.error {
+    background-color: var(--color-error);
+}
