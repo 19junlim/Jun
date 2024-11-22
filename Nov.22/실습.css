@@ -1,0 +1,31 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background: blueviolet;
+    position: absolute;
+}
+
+.Item {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.Item.no1 {
+    background: pink;
+    z-index: 1;
+}
+
+.Item.no2 {
+    top: 30px;
+    left: 30px;
+    background-color: aquamarine;
+    z-index: 0;
+}
+
+.Item.no3 {
+    top: 60px;
+    left: 60px;
+    background-color: yellow;
+    z-index: 0;
+}

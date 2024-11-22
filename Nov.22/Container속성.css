@@ -1,0 +1,43 @@
+.Container {
+    width: 700px;
+    height: 400px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    
+
+}
+
+.items {
+    width: 100px;
+    height: 100px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+.item1 {
+    background-color: red;
+    font-size: 10px;
+}
+
+.item2 {
+    background-color: orange;
+    font-size: 15px;
+}
+
+.item3 {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+.item4 {
+    background-color: green;
+    font-size: 25px;
+}
+
+.item5 {
+    background-color: blue;
+    font-size: 30px;
+}

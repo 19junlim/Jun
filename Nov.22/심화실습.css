@@ -1,0 +1,78 @@
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    line-height: 100px;
+    margin: 4px;
+} 
+
+.container {
+    width: 800px;
+    height: 500px;
+    background-color: blanchedalmond;
+
+}
+
+
+
+
+.flex1 {
+   width: 100%;
+   background-color: pink;
+   /* height: 120px; */
+   justify-content: flex-end;
+   display: flex;
+}
+
+
+.inside-button {
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+ }
+
+ .flex2 {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .fl2-1 {
+    height: 300px;
+    line-height: 300px;
+ }
+
+ .flex2-2 {
+    align-content: center;
+ }
+
+ .flex2-4 {
+ display: flex;
+ flex-wrap: wrap;
+ align-content: flex-end;
+
+ }
+
+ .flex3 {
+    background-color: yellowgreen;
+
+    width: 100%;
+    display: flex;
+
+ }
+
+ .fl3-1 {
+    flex-grow: 1;
+    background-color: blanchedalmond;
+ }
+
+ .fl3-2 {
+    flex-grow: 2;
+    background-color: blueviolet;
+ }
+
+ .fl3-3 {
+    flex-grow: 3;
+    background-color: rgb(242, 136, 37);
+ }

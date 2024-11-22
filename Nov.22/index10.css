@@ -1,0 +1,27 @@
+.background {
+    width: 500px;
+    height: 300px;
+    color: white;
+
+    background: linear-gradient(aqua, pink);
+    /* background: linear-gradient(to right, aqua, pink);
+
+    background: linear-gradient(75deg,pink,aqua);
+    background: linear-gradient(0.8turn, pink, aqua);
+    background: linear-gradient(aqua, 80%, pink);
+    background: linear-gradient(aqua, pink, purple);
+    background: linear-gradient(aqua, 20%, pink,); */
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 700px;
+    background-color: pink;
+
+    background-image: url(./css/Yellow\ Urus.webp);
+
+    background-size: 100% auto;
+    overflow: scroll;
+    /* background-attachment: local; */
+}
+

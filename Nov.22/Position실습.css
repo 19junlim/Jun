@@ -1,0 +1,32 @@
+.div-all {
+    width: 500px;
+    height: 500px;
+    background: aqua;
+    position: relative;
+}
+
+.Inside{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 100px;
+}
+
+.Item1 {
+    position: relative;
+    left: 50px;
+    top: 30px;
+}
+
+.Item2 {
+    position: absolute;
+    right: 30px;
+    bottom: 100px;
+}
+
+.Item3 {
+    position: fixed;
+    right: 100px;
+    top: 100px;
+}
