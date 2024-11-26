@@ -1,0 +1,45 @@
+.background {
+    width: auto;
+    height: 1000px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+img {
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+    display: flex;
+    flex-wrap: wrap;
+    transform: skew(0deg, 15deg);
+    top: 300px;
+    
+}
+
+img:hover {
+    transform: skew(0deg, 0deg);
+    z-index: 4;
+    transition-duration: 1s;
+}
+
+.img1 {
+    left: 10%;
+    z-index: 3;
+    position: absolute;
+}
+
+.img2 {
+    left: 30%;
+    position: absolute;
+    z-index: 2;
+}
+
+.img3 {
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+}

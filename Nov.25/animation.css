@@ -1,0 +1,87 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+
+    animation-name: Jun;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* 이름은 자유지만 애니매이션에 어울리는 이름을 지어줘야한다 */
+@keyframes Jun {
+    0%{
+        left: 0px;
+    }
+    25%{
+        left: 200px;
+    }
+    50%{
+        left: 400px;
+    }
+    75%{
+        left: 200px;
+    }
+
+    100%{
+        left: 0px;
+    }
+
+}
+
+.bounce-ball1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    left: 100px;
+    top: 0;
+
+    animation-name: bounce1;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    /* animation-dire: alternate; */ 
+    
+}
+
+@keyframes bounce1 {
+    to {
+        top: 50px;
+    }
+
+    from {
+        top: 300px;
+    } 
+}
+
+/* .bounce-ball1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50%;
+    left: 100px;
+    top: 0;
+
+    animation-name: bounce1;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes bounce1 {
+    to {
+        top: 50px;
+    }
+
+    from {
+        top: 300px;
+    }
+} */

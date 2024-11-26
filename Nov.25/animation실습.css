@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(60deg, yellow, orange, rgb(116, 78, 32));
+    position: absolute;
+
+    animation-name: moving-ball;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.text {
+    position: relative;
+    animation-name: text001;
+    animation-duration: 3s;
+    animation-timing-function: ease-in  ;
+
+}
+
+@keyframes moving-ball {
+    0% {left:0vw; 
+        top:0vh;}
+
+    25%{left:calc(100vw - 100px); 
+        top:0vh;}
+
+    50%{left:calc(100vw - 100px); 
+        top: calc(100vh - 100px)
+    }
+
+    75%{left:0vw; 
+        top:calc(100vh - 100px)
+    }
+
+    100%{left:0vw; 
+        top:0vh;}
+}
+
+@keyframes text001 {
+    
+    from{
+        left: 100vw;
+        width: 200vw;
+    }
+    to{
+        left: 0vw;
+        width: 100vw;
+    }
+
+}
+

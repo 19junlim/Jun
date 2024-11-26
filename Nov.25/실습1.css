@@ -1,0 +1,32 @@
+.outer {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+}
+
+.inner {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+
+.outer1 {
+    position: relative;
+}
+
+.inner1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 왼쪽 모서리 기준으로 움직인다 */
+    /* top, left를 주는 이유는 왼쪽모서리 기준을 움직이려고 하는것 */
+    transform: translate(-50%, -50%);
+    /* 본인 요소 크기의 비례해서 움직인다 */
+}
+
+.outer2 {
+    /* 부모에게 flex를 줘야지 자식요소에 적용이된다 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -36,10 +36,21 @@
     background-color: aqua;
     display: flex;
     justify-content: space-evenly;
+    /* align-items: center; */
+    /* height: 400px; */
+ }
+
+ .flex2-3 {
+    justify-content: space-evenly;
+ }
+
+ .flex2-1 {
+    height: auto;
+    padding: 7px;
  }
 
  .fl2-1 {
-    height: 300px;
+    height: auto;
     line-height: 300px;
  }
 
@@ -56,10 +67,8 @@
 
  .flex3 {
     background-color: yellowgreen;
-
     width: 100%;
     display: flex;
-
  }
 
  .fl3-1 {
@@ -74,5 +83,6 @@
 
  .fl3-3 {
     flex-grow: 3;
-    background-color: rgb(242, 136, 37);
+    background-color: rgb(206, 111, 22);
+
  }

@@ -1,0 +1,22 @@
+.hi-melody-regular {
+    font-family: "Hi Melody", sans-serif;
+  }
+  
+
+@media (min-width: 500px){
+    body {
+        background-color: skyblue;
+    }
+    p{
+        background-color: green;
+    }
+}
+
+@media (max-height: 300px) {
+    body {
+        background-color: orange;
+    }
+    p {
+        font-family: "Hi Melody", sans-serif;
+    }
+}
