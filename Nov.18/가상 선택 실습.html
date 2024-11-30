@@ -1,59 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            h1:hover{
-                color:red
-            }
-            a:active{
-                background-color: blue;
-            }
-            input:focus{
-                background-color:orange
-            }
-            .stripes *{
-                color:white;
-                background-color: blue;
-            }
-            .stripes :nth-child(4n-6){
-                background-color: yellow;
-                color:black
-            }
-            .box::before{
-                content:"택시"
-            }
-            .box::after{
-                content:"빨리"
-            }
-        </style>
-    </head>
-    <body>
-        <h1>
-            태그에 마우스가 올라가면 글자가 빨간색
-        </h1>
-        <a>
-            태그를 클릭 하고 있으면 배경이 파란색
-        </a>
-        <br>
-        <input id="txt" type="text" value="태그">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      h1:hover {
+        color: red;
+      }
+      a:active {
+        background-color: blue;
+      }
+      input:focus {
+        background-color: orange;
+      }
+      .stripes * {
+        color: white;
+        background-color: blue;
+      }
+      .stripes :nth-child(4n-6) {
+        background-color: yellow;
+        color: black;
+      }
+      .box::before {
+        content: "택시";
+      }
+      .box::after {
+        content: "빨리";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>태그에 마우스가 올라가면 글자가 빨간색</h1>
+    <a> 태그를 클릭 하고 있으면 배경이 파란색 </a>
+    <br />
+    <input id="txt" type="text" value="태그" />
 
-        <div class="stripes">
-            <div>navy</div>
-            <div>yellow</div>
-            <div>navy</div>
-            <div>yellow</div>
-            <div>navy</div>
-            <div>yellow</div>
-            <div>navy</div>
-            <div>yellow</div>
-            <div>navy</div>
-            <div>yellow</div>
-        </div>
-        <br>
-        <div class="box">
-            여기요!
-        </div>
+    <div class="stripes">
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+      <div>navy</div>
+      <div>yellow</div>
+    </div>
+    <br />
+    <div class="box">여기요!</div>
+    <div></div>
+    <input type="radio" id="contractChoice1" name="contact" value="email" />
+    <label for="contractChoice1">Email</label>
 
-    </body>
+    <input type="radio" id="contractChoice1" name="contact" value="Phone" />
+    <label for="contractChoice1">Phone</label>
+
+    <input type="radio" id="contractChoice1" name="contact" value="Mail" />
+    <label for="contractChoice1">Mail</label>
+  </body>
 </html>
