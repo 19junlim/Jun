@@ -123,17 +123,58 @@ while (x >= 1) {
 //   console.log(stars);
 // }
 
-const h = parseInt(prompt("높이를 입력"), 10);
+// const h = parseInt(prompt("높이를 입력"), 10);
 
+// for (let i = 1; i <= h; i++) {
+//   let line = "";
+// }
+
+// for (let j = 1; j <= h - i; j++) {
+//   line = line + "";
+// }
+
+// for (let k = 1; k <= i; k++) {
+//   line = line + "*";
+// }
+// console.log(line);
+/////////////////////////////////
+
+// Q) for문을 활용한 별 찍기.
+// 결과 모습)
+/**
+ * h = 5 입력
+ *     *    // i = 1; / j = h-1 = 4 / k = 1
+ *    **    // i = 2; / j = h-2 = 3 / k = 2
+ *   ***    // i = 3; / j = h-3 = 2 / k = 3
+ *  ****
+ * *****    // i = 5; / j = h-5 = 0 / k = 5
+ */
+// Hint 1) prompt 사용해서 높이를 입력 받기. - 10진수의 정수(int)형으로 형변환 할 것.
+// Hint 2) 각 줄의 내용을 저장할 문자열 변수 만들기.
+// Hint 3) 문자열(" ") 과 문자열(*)을 더한다.
+// Hint 4) for문 중첩.
+
+const h = parseInt(prompt("높이를 입력하세요: "), 10);
+
+// 별 찍기
 for (let i = 1; i <= h; i++) {
-  let line = "";
-}
+  let line = ""; // 각 줄의 내용을 저장할 문자열
 
-for (let j = 1; j <= h - i; j++) {
-  line = line + "";
-}
+  // 공백 추가
+  for (let j = 1; j <= h - i; j++) {
+    line = line + " ";
+  }
+  // line = "    "
 
-for (let k = 1; k <= i; k++) {
-  line = line + "*";
+  // 별 추가
+  for (let k = 1; k <= i; k++) {
+    line = line + "*";
+  }
+  // line = "    *"
+
+  console.log(line);
 }
-console.log(line);
+// h = 5 입력 했을 가정)
+// i = 1 / j = 1 ~ 4 / k = 1 ====>        *
+// i = 2 / j = 1 ~ 3 / k = 2 ====>       **
+// i = 5 / j = 0 만족 x / k = 5 ====> *****
