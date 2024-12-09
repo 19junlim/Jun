@@ -46,11 +46,12 @@ console.log("---------------------");
 // - 이 반복은 배열의 요소를 직접 참조하므로 인덱스를 사용할 필요가 X
 
 // Ex)
-// const alphabets = ['a', 'b', 'c', 'd'];
+// const alphabets = ["a", "b", "c", "d"];
 
 // for (let alpha of alphabets) {
-//     console.log(`alpha >>> ${alpha}`);
+//   console.log(`alpha >>> ${alpha}`);
 // }
+//한줄에 한번씩 alphabets안에 있던 요소들을 적용시켜준다.
 // - 배열 'alphabets'의 각 요소를 반복하면서 'alpha' 변수에 순서대로 할당하고,
 //   각각 요소에 대해 반복문 블록 실행.
 // - alphabets: 배열, 문자열 등등.. 반복 가능한 객체.
@@ -63,7 +64,7 @@ console.log("---------------------");
 // - 일반적으로 배열을 순회하면서 각 요소에 대해 동일한 작업을 수행 할 때 사용.
 // - 각 요소에 대해 함수가 호출 될 때마다, 해당 요소가 함수의 인자로 전달된다.
 
-const alphabets = ["a", "b", "c", "d"];
+// const alphabets = ["a", "b", "c", "d"];
 
 // alphabets.forEach(function (alpha) {
 //     // alpha: currentValue를 의미. = 반복하고 있는 현재 요소
@@ -76,12 +77,12 @@ const alphabets = ["a", "b", "c", "d"];
 //     console.log(`Element: ${alpha}, Index: ${idx}`);
 // });
 
-alphabets.forEach(function (alpha, idx, arr) {
-  // alpha: currentValue를 의미. = 반복하고 있는 현재 요소
-  // idx: cureentValue의 인덱스 (위치)
-  // arr: forEach를 호출한 배열
-  console.log(`Element: ${alpha}, Index: ${idx}, Array: ${arr}`);
-});
+// alphabets.forEach(function (alpha, idx, arr) {
+//   // alpha: currentValue를 의미. = 반복하고 있는 현재 요소
+//   // idx: cureentValue의 인덱스 (위치)
+//   // arr: forEach를 호출한 배열
+//   console.log(`Element: ${alpha}, Index: ${idx}, Array: ${arr}`);
+// });
 
 // ex) forEach 사용
 num = [1, 3, 5, 9];

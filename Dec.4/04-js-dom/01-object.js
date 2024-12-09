@@ -42,15 +42,15 @@ const obj2 = obj; // 동일한 객체의 참조를 갖게 됨.
 // obj와 obj2는 같은 메무리 주소를 참조하므로 동일한 객체를 가리킴.
 console.log(obj, obj2); // {one: 1, two: 2}, {one: 1, two: 2}
 console.log(obj === obj2); // true
-console.log(`obj: ${obj}, obj2: ${obj2}`);
-console.log(`obj: ${JSON.stringify(obj)}, obj2: ${JSON.stringify(obj2)}`);
+console.log(`obj: ${obj}, obj2: ${obj2}`); //obj: [object Object], obj2: [object Object]
+console.log(`obj: ${JSON.stringify(obj)}, obj2: ${JSON.stringify(obj2)}`); //obj: {"one":1,"two":2}, obj2: {"one":1,"two":2}
 // 문자열 템플릿 (${}`)에서는 객체가 "문자열로 변환" 되어 출력함.
 // 객체를 문자열 템플릿에서 읽기 좋게 출력하려면?
 // JSON.stringify 라는 메소드를 사용함.
 // (가볍게)
 // JSON.stringify는 "JS 객체 또는 값"을 JSON 형식의 문자열로 변환하는 메서드.
 // JSON은 데이터를 표현하는 (경량의) 데이터 형식, 키와 값 쌍으로 표현하는데 주로 사용.
-// - 주로 데이터를 네트워크 요청나, 파일 저장에 적합한 문자열로 변환 / ex) 서버로 보낼 때
+// - 주로 데이터를 네트워크 요청이나, 파일 저장에 적합한 문자열로 변환 / ex) 서버로 보낼 때
 
 obj.five = 5;
 console.log(obj, obj2);
